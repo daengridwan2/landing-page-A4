@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEREN | learning Programming</title>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- font awemsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- css eksternal -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section>
+      <!-- <div class="circle"></div> -->
+      <nav data-aos="fade-down" data-aos-delay="1200">
+        <a href="" class="logo"> LEREN </a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#kelas">Kelas</a></li>
+          <li><a href="#kategori">Kategori</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+          <li><a href="#hubungi">Hubungi Kami</a></li>
+
+          <div class="nav-akun">
+            <button class="btn login">Masuk</button>
+            <button class="btn sign-up">Sign Up</button>
+          </div>
+        </ul>
+        <div class="akun">
+          <button class="btn login">Masuk</button>
+          <button class="btn sign-up">Sign Up</button>
+        </div>
+
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      <!-- Akhir navbar -->
+
+      <!-- Content -->
+      <div class="content" data-aos="fade-right" data-aos-delay="2000">
+        <div class="textBot">
+          <h1 class="type">
+            Belajar
+            <span>
+              Dimana saja dan
+              <br />
+               kapan saja
+            </span>
+          </h1>
+          <p>Tingkatkan skill mu dan belajar hal baru <br> untuk  dimasa depan, dimanapun dan <br> kapanpun </p>
+          <a href="#" class="btn-cta">Ayo Mulai</a>
+        </div>
+        <div class="imgBox">
+          <img src="assets/main.png" class="header" />
+         
+        </div>
+      </div>
+      <!-- <ul class="thumbnail">
+        <li><img src="assets/img1.png" onclick="imgSlider('assets/img1.png')" /></li>
+        <li><img src="assets/header2.png" onclick="imgSlider('assets/img2.png')" /></li>
+        <li><img src="assets/header3.png" onclick="imgSlider('assets/img3.png')" /></li>
+        <li><img src="assets/header4.png" onclick="imgSlider('assets/img4.png')" /></li>
+      </ul> -->
+    </section>
+    <!-- Akhir content-->
+
+    <!-- Kelas -->
+    <div class="bg-overview" id="kelas" data-aos="fade-right" data-aos-delay="900">
+      <div class="container">
+        <div class="overview">
+          <div class="title">
+            <h1 class="header-title">Apa yang dipelajari dikelas ini</h1>
+            <p>Temukan bebagai pilihan kelas yang kamu inginkan untuk kamu pelajari</p>
+          </div>
+
+          <div class="card">
+            <div class="overview-card reactjs">
+              <img src="assets/React.png" />
+              <h1>React Js</h1>
+              <p>
+                Kelas ini menawarkan belajar javascript lanjutan dengan mengunakan <span> ReactJs.</span>
+                membuat website dengan mudah.
+              </p>
+            </div>
+            <div class="overview-card android">
+              <img src="assets/android.png" />
+              <h1>Android</h1>
+              <p>Dalam khursus programming <span> Android</span> akan belajar konsep dasar pemograman android dengan framework.</p>
+            </div>
+            <div class="overview-card seo">
+              <img src="assets/seo.png" />
+              <h1>SEO</h1>
+              <p>Dengan adanya kelas <span> SEO,</span>akan di ajarkan bagaimana memposisikan website berada di halaman pertama google.</p>
+            </div>
+            <div class="overview-card data">
+              <img src="assets/UI.png" />
+              <h1>UI/UX Design</h1>
+              <p>DBelajar menjadi seorang UI/UX Design dengan belajar design priciple, design thinking, typohraphy, color dan auto layout.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+    <!-- akhir kelas -->
+
+    <!--setion program -->
+    <div class="program-overview" id="kategori">
+        <div class="content-right">
+          <h1 class = "information-side" data-aos="fade-up" data-aos-delay="900">
+            Apakah anda tertarik untuk menjadi bagian dari LEREN?
+          </h1>
+        </div>
+        <div class="content-left"></div>
+        <div class="content-center"></div>
+      </div>
+      <!-- Kategori -->
+      <div class="kategori">
+        <div class="container">
+          <!-- <img src="assets/bg-pattern.svg" class="bg-pattern" /> -->
+          <h1 class="section-heading text-center" data-aos="fade-up" data-aos-delay="1000">Kategori Kelas</h1>
+          
+          <div class="tab-container" data-aos="fade-up" data-aos-delay="1000">
+            <ul class="tab-nav flex">
+              <li class="active one">Kelas Junior</li>
+              <li class="two">Kelas Middle</li>
+              <li class="three">Kelas Expert</li>
+            </ul>
+            <div class="tab-body tab-one flex active">
+              <div class="tab-col-left">
+                <img src="assets/Kelas-img.svg" alt="junior" />
+              </div>
+              <div class="tab-col-right">
+                <div class="konten">
+                  <h2>Kelas Junior</h2>
+                  <p>Dalam kelas ini akan diajarkan dasar-dasar pemograman secara tersetruktur dan secara interaktif</p>
+                  <a href="">Bergabung sekarang</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-body tab-two flex">
+              <div class="tab-col-left">
+                <img src="assets/Kelas-2.svg" alt="middle" />
+              </div>
+              <div class="tab-col-right">
+                <div class="konten">
+                  <h2>Kelas Middle</h2>
+                  <p>Dalam kelas ini akan diajarkan lanjutan dari pemograman, jika kamu sudah mengerti fundamental dari pemograman</p>
+                  <a href="">Bergabung sekarang</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-body tab-three flex">
+              <div class="tab-col-left">
+                <img src="assets/Kelas-3.svg" alt="expert" />
+              </div>
+              <div class="tab-col-right">
+                <div class="konten">
+                  <h2>Kelas Expert</h2>
+                  <p>Dalam kelas ini akan diajarkan menjadi seorang programmer yang handal dan menjadi senior</p>
+                  <a href="">Bergabung sekarang</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="contact" id="kontak" data-aos="fade-up" data-aos-delay="800">
+        <h2>Ingin konsultasi terlebih dahulu?</h2>
+
+    <form action="">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+      </div>
+      <div class="input-box">
+          
+      </div>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+      <input type="submit" value="Kirim Pesan" class="btn-send">
+    </form>
+
+      </div>
+
+
+
+    <!-- footer -->
+    <div class="footer" id="hubungi">
+      <div class="container-footer">
+        <div class="row">
+          <div class="col-3">
+            <div class="logo">
+              <h1></h1>
+              <p><span>LEREN </span> <br>
+                Bright The Future
+            </p>
+
+            </div>
+          </div>
+
+          <div class="col-1">
+            <h1>Tentang Kami</h1>
+
+            <ul>
+              <li>
+                <a href="">Digital Skill</a>
+              </li>
+              <li>
+                <a href="">Career</a>
+              </li>
+              <li>
+                <a href="">Business</a>
+              </li>
+              
+            </ul>
+          </div>
+
+          <div class="col-1">
+            <h1>Pages</h1>
+
+            <ul>
+              <li>
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="">Kelas</a>
+              </li>
+              <li>
+                <a href="">Pelajaran</a>
+              </li>
+              <li>
+                <a href="">Kontak Kami</a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <!--Typed -->
+
+    <script src="typed.js"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+      });
+    </script>
+  </body>
+</html>

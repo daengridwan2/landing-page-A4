@@ -1,0 +1,506 @@
+:root {
+  --main-primary: #47b5ff;
+  --main-sekunder: #ffff;
+  --text-header: #3f3d56;
+  --text-caption: #8b8e90;
+  --main-body: #d1e4f3;
+}
+
+@media screen and (max-width: 1225px) {
+  nav {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    /* margin-bottom: 50px; */
+    z-index: 9999;
+  }
+  section nav {
+    padding: 11px 0;
+  }
+
+  nav ul {
+    width: 40%;
+  }
+
+  .cont .box {
+    width: calc(50% - 30px);
+    margin-bottom: 50px;
+  }
+  .wrapper {
+    padding: 50px 50px 0 50px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  [data-aos-delay] {
+    transition-delay: 0s !important;
+  }
+
+  nav .logo {
+    max-width: 60px;
+    margin-left: 20px;
+    font-size: 30px;
+  }
+
+  nav .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    background-color: white;
+    /* box-shadow: 0 8px 8px rgba(89, 48, 187, 0.74); */
+    border-top: 2px solid var(--main-body);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 65px;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all ease 0.6s;
+    z-index: 1;
+  }
+
+  .menu-toggle {
+    position: relative;
+    z-index: 2;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  nav ul li a {
+    color: var(--main-primary);
+    margin-left: -5px;
+  }
+  nav ul li a:hover {
+    color: var(--text-caption);
+  }
+  .akun {
+    display: none;
+  }
+  .nav-akun {
+    display: block;
+    margin-left: 15px;
+  }
+  section {
+    padding: 20px 20px 120px;
+  }
+  .content {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  /* .nav-akun {
+      display: none;
+    }
+    .akun {
+      display: none;
+    } */
+  .content .textBot {
+    max-width: 100%;
+  }
+  .content .textBot h1 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+
+  .textBot p {
+    font-size: 15px;
+  }
+  .content .textBot a {
+    padding: 0.5rem 0.5rem;
+    margin: 15px 0 0;
+  }
+  .btn.login {
+    background-color: transparent;
+    padding: 8px 24px;
+    /* color: white; */
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .btn.login:hover {
+    background-color: var(--main-primary);
+    color: white;
+    border-radius: 20px;
+  }
+  .btn.sign-up {
+    color: white;
+  }
+  .content .imgBox {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .content .imgBox img {
+    max-width: 325px;
+  }
+  .imgBox .left {
+    position: absolute;
+    top: 48%;
+    left: 80%;
+    height: 10vh;
+  }
+  .imgBox .right {
+    position: absolute;
+    height: 12vh;
+    right: 83%;
+    top: 70%;
+    bottom: 30%;
+  }
+  .thumbnail li img {
+    max-width: 50px;
+  }
+
+  /* Card */
+  .bg-overview {
+    clip-path: none;
+  }
+  .overview {
+    margin: 0 0 50px 0;
+  }
+  .overview h1 {
+    font-size: 1.5em;
+  }
+  .overview p {
+    font-size: 0.9em;
+  }
+  .overview .card .overview-card {
+    width: 50%;
+  }
+
+  /* Kategori */
+  .tab {
+    position: relative;
+  }
+  .tab .container-dua {
+    position: absolute;
+    bottom: 0;
+  }
+  .section-heading {
+    text-align: center;
+  }
+  .tab-nav li {
+    padding: 3rem;
+  }
+
+  .count {
+    margin: 50px auto;
+  }
+
+  /* .tab-nav {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      border: none;
+    }
+    .tab-nav li:not(:last-child) {
+      margin-right: 0;
+    }
+    .tab-nav li {
+      width: 99%;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .tab-nav li:last-child {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .tab-nav li.active::before {
+      width: 50%;
+    }
+    .tab-body {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+    }
+    .tab-body .tab-col-right {
+      margin-top: 10rem;
+    }
+    .tab-body .tab-col-left {
+      margin-right: 0;
+    } */
+}
+
+@media screen and (max-width: 786px) {
+  .content {
+    justify-content: space-between;
+  }
+
+  .overview {
+    padding-top: 60px;
+  }
+  .overview .header-title {
+    font-size: 1.6rem;
+  }
+
+  .overview p {
+    font-size: 1rem;
+  }
+
+  .overview .card {
+    width: 100%;
+    flex-direction: column;
+    /* padding: 50px 15px; */
+  }
+  .overview .card .overview-card {
+    width: 100%;
+    text-align: center;
+    padding-top: 1.4rem 3rem;
+  }
+  .overview .card .overview-card p {
+    font-size: 0.9em;
+  }
+
+  .kategori {
+    padding: 8rem 0;
+  }
+  .tab-container {
+    margin-top: 50px;
+  }
+  .tab-nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    border: none;
+  }
+  .tab-nav .three {
+    margin-left: 10px;
+  }
+  .tab-nav li:not(:last-child) {
+    margin: 0;
+  }
+  .tab-nav li {
+    width: 90%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .tab-nav li:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0;
+  }
+  .tab-nav li.active::before {
+    width: 50%;
+  }
+
+  .tab-body {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+  .tab-body .tab-col-left {
+    margin-right: 40px;
+  }
+
+  .tab-col-right {
+    margin-top: 50px;
+  }
+
+  .konten p {
+    font-size: 15px;
+  }
+  .konten a {
+    margin-top: 15px;
+  }
+
+  .cont .box {
+    width: 100%;
+  }
+
+  .kategori .section-heading {
+    font-size: 2rem;
+  }
+
+  .tab-col-right .konten h2 {
+    font-size: 1.3rem;
+  }
+
+  .tab-col-right .konten p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .contact {
+    padding: 0 1.3rem;
+  }
+
+  .contact h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact form .input-box input {
+    width: 100%;
+  }
+
+  .contact .btn-send {
+    display: inline-block;
+    padding: 1rem 1rem;
+  }
+
+  .footer {
+    clip-path: none;
+    min-height: 50vh;
+    border-radius: 0;
+  }
+
+  .footer .partner {
+    margin-bottom: 30px;
+    margin-top: -60px;
+  }
+
+  .footer .partner img {
+    width: 19%;
+    padding: 5px;
+  }
+
+  .footer .row {
+    margin-bottom: 15px;
+  }
+  .footer .row .col-3 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .footer .row .col-1 {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .footer ul li p::after {
+    display: none;
+  }
+
+  .footer p {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .type {
+    font-size: 36px;
+  }
+
+  .content .btn-cta {
+    background-color: var(--main-primary);
+  }
+
+  .title h1 {
+    font-size: 26px;
+  }
+
+  .title p {
+    font-size: 15px;
+  }
+
+  .content .textBot .type {
+    font-size: 1.5rem;
+  }
+
+  .content .textBot a {
+    padding: 0.7rem 1rem;
+    font-size: 0.6rem;
+  }
+
+  .overview {
+    width: 125%;
+    margin-left: -20px;
+  }
+
+  .overview .card .overview-card {
+    width: 100%;
+  }
+
+  .box .text {
+    font-size: 20px;
+    text-align: center;
+  }
+  .overview .header-title {
+    font-size: 1.2rem;
+  }
+
+  .overview .title p {
+    font-size: 0.9rem;
+  }
+
+  .kategori .section-heading {
+    font-size: 2rem;
+    width: 110%;
+    margin-left: -15px;
+  }
+
+  .tab-body .tab-col-left img {
+    width: 100%;
+    margin-right: -40px;
+    margin-top: 30px;
+  }
+
+  .tab-container {
+    width: 120%;
+    margin-left: -20px;
+  }
+
+  .contact form .btn-send {
+    padding: 1rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .overview .header-title {
+    margin-left: -30px;
+    font-size: 1.5rem;
+    width: 125%;
+  }
+
+  .overview {
+    width: 90vw;
+    margin-left: -60px;
+  }
+
+  .program-overview .content-right > .information-side {
+    text-align: center;
+    color: var(--text-header);
+    font-size: 1.5rem;
+  }
+
+  .kategori .section-heading {
+    color: var(--text-header);
+    font-size: 1.5rem;
+  }
+
+  .kategori .tab-container .tab-nav li {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .tab-body .tab-col-right .konten {
+    width: 120%;
+    margin-left: -20px;
+  }
+
+  .tab-body .tab-col-right .konten p {
+    font-size: 0.9rem;
+  }
+
+  .tab-body .tab-col-right a {
+    padding-right: 0.7rem 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    margin-left: -40px;
+  }
+
+  .footer .logo span {
+    font-size: 2rem;
+  }
+}
